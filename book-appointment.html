@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Summit Health Medical Practice</title>
+    <meta name="description" content="Schedule your appointment online. Same-day appointments available. Gilbert, AZ medical practice accepting new patients.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .booking-section {
+            padding: 80px 40px;
+            background: white;
+        }
+
+        .booking-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .booking-form {
+            background: var(--bg-cream);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border);
+        }
+
+        .booking-form h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .booking-form .subtitle {
+            color: var(--text-medium);
+            margin-bottom: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 15px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px 18px;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(26, 95, 122, 0.1);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            padding: 18px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-submit:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        .info-card {
+            background: var(--bg-cream);
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .info-card-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 16px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .info-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            color: var(--text-medium);
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .form-row,
+            .info-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-form {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚕</div>
+                Summit Health
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book-appointment.html" class="btn-appointment active">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Book Appointment</span>
+            </div>
+            <h1>Schedule Your Appointment</h1>
+            <p>We make booking your visit simple and convenient.</p>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-card-icon">⏰</div>
+                    <h3>Quick Response</h3>
+                    <p>We'll confirm within 24 hours</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon">📱</div>
+                    <h3>Easy Reminders</h3>
+                    <p>Text & email confirmations</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon">🏥</div>
+                    <h3>Same-Day Available</h3>
+                    <p>Often available for urgent needs</p>
+                </div>
+            </div>
+
+            <div class="booking-form">
+                <h2>Request Your Appointment</h2>
+                <p class="subtitle">Fill out the form below and we'll contact you to confirm your appointment time.</p>
+                
+                <form id="appointmentForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name *</label>
+                            <input type="text" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name *</label>
+                            <input type="text" placeholder="Smith" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" placeholder="john.smith@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" placeholder="(480) 555-0123" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Date of Birth *</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Preferred Date *</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Time *</label>
+                            <select required>
+                                <option value="">Select preferred time...</option>
+                                <option>Morning (8am - 10am)</option>
+                                <option>Mid-Morning (10am - 12pm)</option>
+                                <option>Afternoon (12pm - 3pm)</option>
+                                <option>Late Afternoon (3pm - 5pm)</option>
+                                <option>No preference</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Reason for Visit *</label>
+                        <select required>
+                            <option value="">Select reason for visit...</option>
+                            <option>Annual Physical / Wellness Check</option>
+                            <option>New Patient Appointment</option>
+                            <option>Follow-up Appointment</option>
+                            <option>Illness / Sick Visit</option>
+                            <option>Chronic Condition Management</option>
+                            <option>Sports Physical</option>
+                            <option>Vaccination</option>
+                            <option>Lab Results Discussion</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Provider</label>
+                        <select>
+                            <option value="">No preference</option>
+                            <option>Dr. Sarah Mitchell</option>
+                            <option>Dr. James Chen</option>
+                            <option>Emily Parker, NP</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are you a new patient?</label>
+                        <select>
+                            <option>Yes, I'm a new patient</option>
+                            <option>No, I'm an existing patient</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Additional Notes or Concerns (Optional)</label>
+                        <textarea placeholder="Any specific symptoms, questions, or information we should know before your appointment?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Request Appointment</button>
+
+                    <p style="margin-top: 20px; font-size: 13px; color: var(--text-light); text-align: center;">
+                        * Required fields. By submitting this form, you agree to be contacted by our office.
+                    </p>
+                </form>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: var(--bg-cream); border-radius: 16px;">
+                <h3 style="font-size: 24px; margin-bottom: 12px;">Prefer to Call?</h3>
+                <p style="color: var(--text-medium); margin-bottom: 20px;">Our friendly staff is ready to help schedule your appointment.</p>
+                <a href="tel:4805550123" class="btn-primary">Call (480) 555-0123</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Summit Health Medical Practice</h3>
+                    <p>Providing exceptional healthcare to the Gilbert community for over 15 years.</p>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <span>📍</span>
+                            <span>123 Medical Plaza Dr, Gilbert, AZ 85234</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span>📞</span>
+                            <span>(480) 555-0123</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span>✉️</span>
+                            <span>info@summithealth.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Patient Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                        <li><a href="#">Patient Portal</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">New Patients</a></li>
+                        <li><a href="#">Forms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Office Hours</h4>
+                    <ul class="footer-links">
+                        <li>Monday - Friday: 8am - 6pm</li>
+                        <li>Saturday: 9am - 2pm</li>
+                        <li>Sunday: Closed</li>
+                        <li style="margin-top: 12px;"><strong>After-hours: (480) 555-0199</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 Summit Health Medical Practice. All rights reserved.</div>
+                <div><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

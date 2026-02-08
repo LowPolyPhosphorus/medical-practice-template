@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary Care Services | Summit Health Medical Practice</title>
+    <meta name="description" content="Comprehensive primary care services in Gilbert, AZ. Health assessments, preventive care, chronic condition management, and ongoing health maintenance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .service-detail {
+            padding: 80px 40px;
+            background: white;
+        }
+
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+
+        .service-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .service-content p {
+            color: var(--text-medium);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .service-content ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .service-content ul li {
+            padding: 12px 0 12px 32px;
+            position: relative;
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        .service-content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .service-sidebar {
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: var(--bg-cream);
+            padding: 32px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+        }
+
+        .sidebar-card h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--text-medium);
+            font-size: 14px;
+        }
+
+        .info-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--primary);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
+            color: white;
+            padding: 32px;
+            border-radius: 16px;
+            margin: 40px 0;
+        }
+
+        .highlight-box h3 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        .highlight-box p {
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        @media (max-width: 1024px) {
+            .service-detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-sidebar {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚕</div>
+                Summit Health
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book-appointment.html" class="btn-appointment">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="services.html">Services</a>
+                <span>/</span>
+                <span>Primary Care</span>
+            </div>
+            <h1>Primary Care Services</h1>
+            <p>Comprehensive health assessments and ongoing care for adults and families.</p>
+        </div>
+    </section>
+
+    <!-- Service Detail -->
+    <section class="service-detail">
+        <div class="service-detail-grid">
+            <div class="service-content">
+                <p style="font-size: 18px; color: var(--text-dark); margin-bottom: 32px;">
+                    Primary care is the foundation of your health. Our experienced physicians provide comprehensive, personalized care that addresses your immediate health concerns while focusing on long-term wellness and disease prevention.
+                </p>
+
+                <h2>What is Primary Care?</h2>
+                <p>
+                    Primary care serves as your first point of contact in the healthcare system. Your primary care physician (PCP) coordinates all aspects of your healthcare, from routine checkups to managing chronic conditions and referring you to specialists when needed.
+                </p>
+                <p>
+                    At Summit Health, we believe in building long-term relationships with our patients. This continuity of care allows us to understand your unique health history, family background, lifestyle factors, and personal health goals.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Why Choose a Primary Care Physician?</h3>
+                    <p>
+                        Having a dedicated primary care physician means having a trusted healthcare partner who knows you, your health history, and your goals. This relationship leads to better health outcomes, more personalized care, and peace of mind knowing someone is looking out for your overall wellbeing.
+                    </p>
+                </div>
+
+                <h2>Services We Provide</h2>
+                <p>Our primary care services cover a wide range of healthcare needs:</p>
+
+                <ul>
+                    <li>Annual physical examinations and health assessments</li>
+                    <li>Preventive care and health screenings</li>
+                    <li>Diagnosis and treatment of acute illnesses and injuries</li>
+                    <li>Management of chronic conditions (diabetes, hypertension, asthma, etc.)</li>
+                    <li>Medication management and prescription refills</li>
+                    <li>Immunizations and vaccinations</li>
+                    <li>Health counseling and lifestyle guidance</li>
+                    <li>Coordination with specialists when needed</li>
+                    <li>Minor in-office procedures</li>
+                    <li>Pre-operative evaluations</li>
+                </ul>
+
+                <h2>Common Conditions We Treat</h2>
+                <p>
+                    Our primary care physicians are experienced in diagnosing and managing a wide variety of health conditions, including:
+                </p>
+
+                <ul>
+                    <li>Respiratory infections (colds, flu, bronchitis, pneumonia)</li>
+                    <li>Urinary tract infections</li>
+                    <li>Skin conditions (rashes, eczema, minor infections)</li>
+                    <li>Digestive issues</li>
+                    <li>Headaches and migraines</li>
+                    <li>Joint and muscle pain</li>
+                    <li>Allergies</li>
+                    <li>High blood pressure and high cholesterol</li>
+                    <li>Diabetes and pre-diabetes</li>
+                    <li>Thyroid disorders</li>
+                </ul>
+
+                <h2>What to Expect at Your Visit</h2>
+                <p>
+                    During your primary care visit, your physician will take time to listen to your concerns, review your medical history, and perform a thorough examination. We believe in shared decision-making, ensuring you understand your health status and are involved in creating your treatment plan.
+                </p>
+                <p>
+                    For new patients, your first visit will include a comprehensive health assessment, discussion of your health history, current medications, and health goals. We'll also discuss preventive care recommendations based on your age, gender, and risk factors.
+                </p>
+
+                <h2>Preventive Care Focus</h2>
+                <p>
+                    Prevention is at the heart of primary care. Regular checkups allow us to detect potential health issues early when they're most treatable. We'll recommend age-appropriate screenings, vaccinations, and lifestyle modifications to keep you healthy.
+                </p>
+                <p>
+                    Our preventive care approach includes monitoring key health indicators like blood pressure, cholesterol, blood sugar, and body weight. We'll also discuss important topics like nutrition, exercise, stress management, and sleep health.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Schedule Your Primary Care Visit</h3>
+                    <p>
+                        Whether you're establishing care with a new physician or it's time for your annual checkup, we're here to help. Same-day appointments are often available for urgent concerns.
+                    </p>
+                    <a href="book-appointment.html" class="btn-secondary-white" style="margin-top: 20px;">Book Appointment</a>
+                </div>
+            </div>
+
+            <div class="service-sidebar">
+                <div class="sidebar-card">
+                    <h3>Quick Facts</h3>
+                    <div class="sidebar-info">
+                        <div class="info-item">
+                            <div class="info-icon">⏱</div>
+                            <div>
+                                <strong>Appointment Length</strong><br>
+                                30-60 minutes
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">💰</div>
+                            <div>
+                                <strong>Insurance</strong><br>
+                                Most plans accepted
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📅</div>
+                            <div>
+                                <strong>Frequency</strong><br>
+                                Annual visits recommended
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">🩺</div>
+                            <div>
+                                <strong>Age Range</strong><br>
+                                18+ (Adults & Seniors)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Our Providers</h3>
+                    <p style="color: var(--text-medium); font-size: 14px; margin-bottom: 16px;">
+                        All our primary care physicians are board-certified with years of experience.
+                    </p>
+                    <a href="team.html" class="btn-text">Meet Our Team →</a>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Related Services</h3>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <a href="service-preventive-care.html" class="btn-text">Preventive Care</a>
+                        <a href="service-chronic-disease.html" class="btn-text">Chronic Disease Management</a>
+                        <a href="service-lab-services.html" class="btn-text">Lab Services</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-card" style="background: var(--primary); border-color: var(--primary);">
+                    <h3 style="color: white;">Need Care Today?</h3>
+                    <p style="color: rgba(255,255,255,0.95); font-size: 14px; margin-bottom: 16px;">
+                        Same-day appointments available for urgent health concerns.
+                    </p>
+                    <a href="tel:4805550123" class="btn-secondary-white">Call (480) 555-0123</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Better Health?</h2>
+                <p>Schedule your primary care appointment today.</p>
+                <div class="cta-buttons">
+                    <a href="book-appointment.html" class="btn-primary">Book Appointment</a>
+                    <a href="contact.html" class="btn-secondary-white">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Summit Health Medical Practice</h3>
+                    <p>Providing exceptional healthcare to the Gilbert community for over 15 years.</p>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <span>📍</span>
+                            <span>123 Medical Plaza Dr, Gilbert, AZ 85234</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span>📞</span>
+                            <span>(480) 555-0123</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span>✉️</span>
+                            <span>info@summithealth.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Patient Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                        <li><a href="#">Patient Portal</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">New Patients</a></li>
+                        <li><a href="#">Forms</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Office Hours</h4>
+                    <ul class="footer-links">
+                        <li>Monday - Friday: 8am - 6pm</li>
+                        <li>Saturday: 9am - 2pm</li>
+                        <li>Sunday: Closed</li>
+                        <li style="margin-top: 12px;"><strong>After-hours: (480) 555-0199</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 Summit Health Medical Practice. All rights reserved.</div>
+                <div><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
